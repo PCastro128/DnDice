@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Converter Popup</title>
+    <script src="jquery-3.4.1.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="imports/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="imports/jquery-3.4.1.min.js"></script>
+    <script src="imports/popper.min.js"></script>
+    <script src="imports/bootstrap.min.js"></script>
+  </head>
+  <body class="text-center">
+      <img src='logo128.jpg' id='converterLogo' class="mt-3">
+      <div class="inputDiv form-group d-flex justify-content-between mb-0">
+        <input id='inputNumber' class="form-control ml-3 mt-1">
+        <select class="form-control mt-1" id="baseSelector">
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option selected>10</option>
+          <option>11</option>
+          <option>12</option>
+          <option>13</option>
+          <option>14</option>
+          <option>15</option>
+          <option>16</option>
+          <option>17</option>
+          <option>18</option>
+          <option>19</option>
+          <option>20</option>
+          <option>21</option>
+          <option>22</option>
+          <option>23</option>
+          <option>24</option>
+          <option>25</option>
+          <option>26</option>
+          <option>27</option>
+          <option>28</option>
+          <option>29</option> 
+          <option>30</option>
+          <option>31</option>
+          <option>32</option>
+          <option>33</option>
+          <option>34</option>
+          <option>35</option>
+          <option>36</option>
+        </select>
+      </div>
+      <center>Choose the base you are in</center>
+      <div class="container-fluid btn-group mb-2">
+        <button type="button" class="btn btn-outline-info" id='hexButton'>Hex</button>
+        <button type="button" class="btn btn-outline-info" id='binaryButton'>Binary</button>
+        <button type="button" class="btn btn-outline-info" id='decimalButton'>Decimal</button>
+        <button type="button" class="btn btn-outline-info" id='customButton'>Custom</button>
+      </div>
+      <br>
+      <div>
+        <table class="table table-bordered">
+          <tr>
+            <th>Hex</th>
+            <td><span id="hex"></span></td>
+          </tr>
+          <tr>
+            <th>Binary</th>
+            <td><span id="binary"></span></td>
+          </tr>
+          <tr>
+            <th>Decimal</th>
+            <td><span id="decimal"></span></td>
+          </tr>
+          <tr>
+            <th>Custom</th>
+            <td><span id="custom"></span></td>
+          </tr>
+        </table>
+      </div>
+      <script src="button.js"></script>
+      <script src="selection.js"></script>
+      <span id="output"></span>
+  </body>
+</html>

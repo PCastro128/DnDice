@@ -1,0 +1,30 @@
+{
+  "name": "D&Dice",
+  "version": "1.0",
+  "description": "Allows for better dice rolling in the Improved Initiative website.",
+  "manifest_version": 2,
+  "permissions": ["activeTab", "tabs", "<all_urls>"],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/logo16t.png",
+      "32": "images/logo32.png",
+      "48": "images/logo48t.png",
+      "128": "images/logo128.png"
+    }
+  },
+ "content_scripts": [
+   {
+     "matches": ["<all_urls>"],
+     "js": ["selection_injection.js"],
+     "run_at": "document_start",
+     "all_frames": true
+   }
+ ],
+ "icons": {
+      "16": "images/logo16t.png",
+      "32": "images/logo32.png",
+      "48": "images/logo48t.png",
+      "128": "images/logo128.png"
+    }
+}

@@ -1,0 +1,12 @@
+body {
+  width: 320px;
+  height: 350px;
+}
+
+.inputDiv {
+  width: 300px;
+}
+
+#baseSelector {
+  width: 100px;
+}
